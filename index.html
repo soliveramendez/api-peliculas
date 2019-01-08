@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>API FETCH</title>
+</head>
+
+
+<body>
+<!--inicio navbar-->
+    <nav id="menu" class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/img/pestana.ico" width="30" height="30" class="d-inline-block align-top" alt="logo bootstrap">
+            SuperPelis
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <!--justify-content-end es para colapsar el menu a la derecha-->
+            <div class="navbar-nav text-center mt-2">
+                <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Nosotros</a>
+                <a class="nav-item nav-link mr-md-2" href="#">Registrate</a>
+                <div class="form-group">
+                    <button class="btn btn-danger mt-0">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!--final navbar-->
+
+<!--inicio-->
+    <div class="jumbotron fondo text-white text-center rounded-0">
+        <div class="container">
+            <h3 class="d-none d-sm-block">¿Eres un gran aficionado al Cine?</h3>
+            <!--d-none d-sm-block sirve para ocultar en modo movil buscar en bootstrap display-->
+            <h1 class="display-4">Recibe noticias por teléfono</h1>
+            <p class="lead">Más de 100 películas para disfrutar</p>
+        </div>
+
+        <form class="form-inline d-flex justify-content-center flex-column flex-sm-row">
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" class="sr-only">Ingresa tu e-mail</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Ingresa tu e-mail">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 bg-danger">Enviar</button>
+        </form>
+        <img src="assets/img/pelicula.png" class="img-fluid img-fluid d-sm-none d-none d-md-inline" alt="Responsive image">
+    </div>
+<!--final-->
+
+<!--Buscador de películas-->
+    <div class="container pt-5 justify-content-center text-center">
+        <h1>Busca tu Película Favorita</h1>
+        <input id="buscar" class="form-control d-inline my-4 w-50" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-danger w-50" onclick=ver()>Buscar</button>
+        <div id="contenido" class="my-3 mx-5 px-5 py-5 text-muted">
+           
+        </div>
+    </div>
+<!--final buscador-->
+
+<!--Películas estrenos-->
+    <div class="container text-center">
+        <h1>Escoge tu Película Estreno</h1>
+        <div  class="my-5">
+            <ul id="peliculas" class="list-inline py-5">
+           
+            </ul>
+        </div>
+    </div>
+<!--final estrenos-->
+
+<!--inicio footer-->
+    <footer class="container-fluid footer bg-inverse text-white py-3 text-center bg-dark">
+        <a class="text-white" href="">Copyright©Your Website 2019</a>
+    </footer>
+<!--final footer-->
+
+    
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

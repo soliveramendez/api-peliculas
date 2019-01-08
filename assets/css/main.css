@@ -1,0 +1,87 @@
+.fondo {
+    background: rgb(61, 33, 124);
+    height: 400px;
+}
+
+.bg-primary {
+    transition: all 1s ease;
+}
+
+#peliculas{
+    overflow: hidden;
+    background-color:#000;
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+
+#img {
+    vertical-align: super;
+}
+
+#img:hover {
+    filter: alpha(opacity=50);
+    opacity: .50;
+}
+
+#pulsar{
+    position: relative;
+    display: unset;
+    opacity: 0;
+    color:#fff;
+    top: -150px;
+    font-weight: bold;
+}
+
+#pulsar:hover {
+    opacity: 1;
+    transition: opacity .8s;
+    filter: alpha(opacity=90);
+    opacity: .90;
+    color: #fff;  
+}
+
+#img:hover ~ #pulsar {
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .50;
+}
+
+.footer{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+#peliculas img:hover .p{
+    top:0;
+}
+
+img{
+    vertical-align: super;
+}
+
+#link:hover{
+        font-size: 20px;
+        color: #100;
+}
+
+p{
+    display:flex;
+    align-items: center;
+    color: white;
+    background: blueviolet;
+    position: absolute;
+    width: 100%;
+    top:-100;
+}
+
+#img:hover {
+    filter: alpha(opacity=50);
+    moz-opacity: .50;
+    opacity: .50;
+    cursor: pointer;
+}
+*/
